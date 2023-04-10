@@ -18,7 +18,7 @@ const Hero = () => (
     <MyContainer>
       <Svg1 className="w-72 sm:w-96 mx-auto" />
       <p className="my-6 px-10 text-cyan-800 font-medium leading-loose tracking-wide md:text-lg">
-        東大出身者が教える小中学生向け本格的プログラミング学習サービス「Schole（スコレ）」
+        東大出身者が教える小中学生向けオンラインプログラミングスクール「Schole（スコレ）」
       </p>
       <Logo width={200} className="mx-auto" />
       <div className="flex justify-center my-10">
@@ -177,10 +177,14 @@ const Contact = () => (
     <div id="contact" />
     <div className="bg-[#EAF8F6] py-10">
       <SectionTitle en="Contact" ja="お問い合わせ" />
+      <div className="my-6 text-center">
+        <MyContainer>
+          <a href="https://lin.ee/uPrGK1w" className="underline mx-1 text-cyan-700 text-md">LINE</a>
+          または下記のフォームよりお問い合わせください
+        </MyContainer>
+      </div>
       <div className="googleform-wrapper">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSf5388_07qd4OnYCaHx49WWgWI6xgrM8ju9Hel3p-JZXPI33w/viewform?embedded=true"
-        >
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf5388_07qd4OnYCaHx49WWgWI6xgrM8ju9Hel3p-JZXPI33w/viewform?embedded=true">
           読み込んでいます…
         </iframe>
       </div>
