@@ -3,17 +3,21 @@ import { useState } from 'react';
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import MobileMenu from "./MobileMenu";
 import { MyContainer } from "./ui/MyContainer";
+import {useRouter} from "next/router";
 
 export function AppBar() {
   const [active, setActive] = useState(false);
   const handleClick = () => {
     setActive(!active);
   }
+  const router = useRouter();
+  const path = router.pathname
   const navs = [
-    { href: "/python-course#service", title: "Service", jpTitle: "Scholeのサービス内容" },
-    { href: "/python-course#price", title: "Price", jpTitle: "料金" },
-    { href: "/python-course#voice", title: "Voice", jpTitle: "受講者さま・保護者さまの声"},
-    { href: "/python-course#contact", title: "Contact", jpTitle: "お問い合わせ"},
+    { href: `${path}#service`, title: "Service", jpTitle: "Scholeのサービス内容" },
+    { href: `${path}#price`, title: "Price", jpTitle: "料金" },
+    { href: `${path}#event`, title: "Event", jpTitle: "イベント" },
+    { href: `${path}#voice`, title: "Voice", jpTitle: "受講者さま・保護者さまの声"},
+    { href: `${path}#contact`, title: "Contact", jpTitle: "お問い合わせ"},
   ]
   return (
     <>

@@ -42,6 +42,7 @@ const Service = () => (
           <br />
           学んでみませんか？
         </p>
+        <img src="/img1.png" className="w-full mx-auto mb-12"/>
         <SectionTitle en="Service" ja="Scholeのサービス内容" />
         <div className="mt-6">
           <Svg2 className="w-48 sm:w-72 py-4 mx-auto" />
@@ -112,6 +113,30 @@ const Price = () => (
               </ul>
             </div>
           </div>
+        </div>
+      </MyContainer>
+    </div>
+  </>
+);
+
+const Event = () => (
+  <>
+    <div id="event" />
+    <div className="bg-[#EAF8F6] pt-10 pb-12">
+      <MyContainer>
+        <SectionTitle en="Event" ja="イベント" />
+        <div className="my-10">
+          <p className="px-8 mt-4 mb-6 text-center">
+            Scholeはこれまで東京・栃木・岡山など全国各地で体験イベントを実施してきました。
+            詳細は以下のリンク先に掲載しておりますので、 ぜひご覧ください。
+          </p>
+          <a
+            href="https://note.com/schole_pg/"
+            target="_blank"
+            className="bg-amber-500 text-white mx-auto w-52 block text-center p-3 rounded"
+          >
+            イベント記事はこちら
+          </a>
         </div>
       </MyContainer>
     </div>
@@ -203,6 +228,7 @@ export default function PythonCourse() {
         <Hero />
         <Service />
         <Price />
+        <Event />
         <Voice />
         <Contact />
         <Footer />
