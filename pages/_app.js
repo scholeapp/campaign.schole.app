@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-    // gtag.js (deprecated. Trying to migrate gtag.js into Google TagManager)
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-BLGRS7WXF0"></script>
         <script
           dangerouslySetInnerHTML={{
